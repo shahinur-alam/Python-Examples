@@ -6,3 +6,4 @@ common python examples will be here.
 Variable
 Operator
 class
+lambda
