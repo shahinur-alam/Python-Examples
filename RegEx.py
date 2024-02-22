@@ -1,22 +1,18 @@
 import re
 
-def is_valid_email(email):
-    # Define a simple email validation pattern
-    email_pattern = re.compile(r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$')
+def validate_email(email_address):
+    pattern = re.compile(r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$') #RegEx Pattern
 
-    # Use the pattern to match the email
-    match = email_pattern.match(email)
+    match = pattern.match(email_address)  #Matching with string
 
-    # Check if the email is valid
-    if match:
+    if match: #Return True or False
         return True
     else:
         return False
 
-# Example usage:
-email_to_check = input("Enter an email address: ")
+input_email = input("Enter your email address- ") #Taking input from keyboard
 
-if is_valid_email(email_to_check):
-    print("The email address is valid.")
+if validate_email(input_email):
+    print("Valid email.")
 else:
-    print("The email address is not valid.")
+    print("Invalid email.")
