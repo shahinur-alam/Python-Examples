@@ -7,3 +7,4 @@ Variable
 Operator
 class
 lambda function
+Decorators
