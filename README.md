@@ -8,3 +8,4 @@ Operator
 class
 lambda function
 Decorators
+RegEx
