@@ -9,4 +9,3 @@ class
 lambda function
 Decorators
 RegEx
-exercise
