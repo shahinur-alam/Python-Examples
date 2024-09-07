@@ -19,6 +19,6 @@ stack_var.pop()
 
 print("Stack after pop",stack_var)
 
-stack_var.pop()
+stack_var.pop(1) #pop method accept index value to pop specific value
 
-print("Stack after pop",stack_var)
+print("Stack after pop from index 1",stack_var)
